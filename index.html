@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Amazon-Clone</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/899bc37988.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="nav-bar">
+        <!-- BOX-1 -->
+        <div class="nav-logo">
+          <img
+            class="amazon-logo border"
+            src="header\amazon-logo.png"
+            alt="Amazon-logo"
+          />
+        </div>
+        <!-- BOX-2 -->
+        <div class="nav-add border">
+          <p class="add-first">Hello</p>
+          <div class="nav-loc">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="add-second">Select your address</p>
+          </div>
+        </div>
+        <!-- BOX-3 -->
+        <div class="nav-search">
+          <div class="nav-select">
+            <select class="options">
+              <option value="">All</option>
+              <option value="">All Categories</option>
+              <option value="">Alexa Skills</option>
+              <option value="">Amazon Devices</option>
+              <option value="">Amazon Fashion</option>
+              <option value="">Amazon Fresh</option>
+              <option value="">Amazon Pharmacy</option>
+              <option value="">Appliances</option>
+              <option value="">Appls & Games</option>
+              <option value="">Audible Audiobooks</option>
+              <option value="">Baby</option>
+              <option value="">Beauty</option>
+              <option value="">Books</option>
+              <option value="">Car & Motorbike</option>
+              <option value="">Clothing & Accessories</option>
+              <option value="">Collectibles</option>
+              <option value="">Computers & Accessories</option>
+              <option value="">Electronics</option>
+              <option value="">Furniture</option>
+              <option value="">Garden Cards</option>
+              <option value="">Grocery & Gourmet Foods</option>
+              <option value="">Health & Kitchen</option>
+              <option value="">Industrial & Scientific</option>
+              <option value="">Jewellery</option>
+              <option value="">Kindle Store</option>
+              <option value="">Luggage & Bags</option>
+              <option value="">Luxury Beauty</option>
+              <option value="">Movies & TV Shows</option>
+              <option value="">Music</option>
+              <option value="">Musical Intstruments</option>
+              <option value="">Office Products</option>
+              <option value="">Pet Supplies</option>
+              <option value="">Prime Video</option>
+              <option value="">Shoes & Handbags</option>
+              <option value="">Software</option>
+              <option value="">Sports, Fitness & Outdoors</option>
+              <option value="">Subscribe & Save</option>
+              <option value="">Tools & Home Improvement</option>
+              <option value="">Toys & Games</option>
+              <option value="">Under ₹500</option>
+              <option value="">Video Games</option>
+              <option value="">Watches</option>
+            </select>
+          </div>
+          <div class="nav-input">
+            <input class="search" type="text" />
+          </div>
+          <div class="nav-find">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <!-- BOX-5 -->
+        <div class="nav-sign border">
+          <p class="first">Hello, sign in</p>
+          <div class="acc-list">
+            <p class="second">Accounts & Lists</p>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <!-- sign-window -->
+          <div class="sign-in-window">
+            <div class="sign-in">
+              <span class="sign-in-btn"><a href="#">Sign in</a></span>
+              <span>New customer?<a href="#">Start here.</a></span>
+            </div>
+            <div class="list-accounts">
+              <div class="same">
+                <h2>Your Lists</h2>
+                <ul>
+                  <li><a href="#">Create a Wish LIst</a></li>
+                  <li><a href="#">Wish from Any Website</a></li>
+                  <li><a href="#">Baby Wishlist</a></li>
+                  <li><a href="#">Discover Your Style</a></li>
+                  <li><a href="#">Explore Showroom</a></li>
+                </ul>
+              </div>
+              <div class="same">
+                <h2>Your Account</h2>
+                <ul>
+                  <li><a href="#">Your Account</a></li>
+                  <li><a href="#">Your Orders</a></li>
+                  <li><a href="#">Your Wish List</a></li>
+                  <li><a href="#">Your Recommendation</a></li>
+                  <li><a href="#">Keep Shopping for</a></li>
+                  <li><a href="#">Your Prime Membership</a></li>
+                  <li><a href="#">Your Prime video</a></li>
+                  <li><a href="#">Your Subscribe & Save Items</a></li>
+                  <li><a href="#">Memberships &  Subscription</a></li>
+                  <li><a href="#">Your Seller Account</a></li>
+                  <li><a href="#" class="extra">Manage Your Content and Devices</a></li>
+                  <li><a href="#" class="extra">Your Free Amaozon Bussiness Account</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BOX-6 -->
+        <div class="nav-ret-ord border">
+          <p class="first">Returns</p>
+          <div class="acc-list">
+            <p class="second">& Orders</p>
+          </div>
+        </div>
+        <!-- BOX-7 -->
+        <div class="nav-cart border">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p class="textcart">Cart</p>
+        </div>
+      </div>
+    <!-- NAV-PANEL -->
+      <div class="nav-panel">
+        <div class="side-bar">
+          <div class="all" onclick="model_window()">
+            <i class="fa-solid fa-bars"></i>
+            <p class="tit">All</p>
+          </div>
+          
+            <!-- SIDE-WINDOW -->
+            <div class="side-window ">
+              <i class="fa-solid fa-x close"></i>
+            </div>
+              <div class="model-window">
+                <div class="model-window-head">
+                  <div class="sign-icon">
+                    <i class="fa-solid fa-user"></i>
+                  </div>
+                  <a href="#">Hello, sign in</a>
+                </div>
+                <div class="model-window-content">
+                  <div class="rows row1">
+                    <h2>Trending</h2>
+                    <p>Best Sellers</p>
+                    <p>New Releases</p>
+                    <p>Movers and Shakers</p>
+                  </div>
+                  <div class="rows">
+                    <h2>Digital Content And Devices</h2>
+                    <p>Echo & Alexa</p>
+                    <p>Fire TV</p>
+                    <p>Kindle E-Readers & eBooks</p>
+                    <p>Audible Audiobooks</p>
+                    <p>Amazon Prime Video</p>
+                    <p>Amazon Prime Music</p>
+                  </div>
+                  <div class="rows">
+                    <h2>Shop By Category</h2>
+                    <p>Mobiles, Computers</p>
+                    <p>TV, Appliances, Electronics</p>
+                    <p>Men's Fashion</p>
+                    <p>Women's Fashion</p>
+                    <p>See All</p>
+                  </div>
+                  <div class="rows">
+                    <h2>Programs & Features</h2>
+                    <p>Gift Cards & Mobile Recharges</p>
+                    <p>Amazon Launchpad</p>
+                    <p>Flight Tickets</p>
+                    <p>Clearance store</p>
+                  </div>
+                  <div class="rows">
+                    <h2>Help & Settings</h2>
+                    <p>Your Account</p>
+                    <p>Customer Service</p>
+                    <p>Sign in</p>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+          <div class="nav">
+            <ul>
+              <li><a href="#"> Amazon miniTV </a></li>
+              <li><a href="">Sell</a></li>
+              <li><a href="#">Best Sellers</a></li>
+              <li><a href="#">Today's Deals </a></li>
+              <li><a href="#">Mobiles </a></li>
+              <li><a href="#">New Releases </a></li>
+              <li><a href="#">Customer Service </a></li>
+              <li><a href="#">Prime </a></li>
+              <li><a href="#">Electronics </a></li>
+              <li><a href="#">Home & Kitchen </a></li>
+              <li><a href="#">Fashion </a></li>
+              <li><a href="#">Computers </a></li>
+              <li><a href="#">Amazon Pay </a></li>
+              <li><a href="#">Gift Ideas </a></li>
+            </ul>
+          </div>
+          <div class="content">New Launches from Mobile, Electronics & more|Shop now</div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="slide-show">
+        <div class="slide-left slide-control"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="slide-right slide-control"><i class="fa-solid fa-chevron-right"></i></div>
+      </div>
+      <div class="sub-main">
+      <div class="hero">
+        <div class="col1 cols">
+          <h2>Bluetooth Calling Smartwatch starts at ₹1,999</h2>
+          <div class="content1 contents">
+            <img src="hero\image-1.jpg">
+            <span><a href="#">Shop Now</a></span>
+          </div>
+        </div>
+        <div class="col12 cols">
+          <h2>Up to 70% off | Clearance store</h2>
+          <div class="content2 contents">
+            <img src="hero\image-2.jpg">
+            <span><a href="#">See more</a></span>
+          </div>
+        </div>
+        <div class="col3 cols">
+          <h2>Starting 99| All your home improvement needs</h2>
+          <div class="content2 contents ">
+            <div class="common">
+              <div class="common-content">
+                <img class="ext"  src="hero\image-3.1.jpg" alt="">
+                <p>Spin mops, wipes & more</p>
+              </div>
+              <div class="common-content">
+                <img class="ext" src="hero\image-3.2.jpg" alt="">
+                <p>Bathroom hardware & accessories</p>
+              </div>
+              <div class="common-content">
+                <img class="ext" src="hero\image-3.3.jpg" alt="">
+                <p>Hammers, screwdrivers & more</p>
+              </div>
+              <div class="common-content">
+                <img class="ext" src="hero\image-3.4.jpg" alt="">
+                <p>Extension boards, plugs & more</p>
+              </div>
+            </div>
+            <span><a href="#">See all offers</a></span>
+          </div>
+         
+        </div>
+        <div class="col4 cols">
+          <h2>Up to 60% off | Styles for men</h2>
+          <div class="content2 contents ">
+            <div class="common">
+              <div class="common-content">
+                <img src="hero\image-4.1.jpg" alt="">
+                <p>Clothing</p>
+              </div>
+              <div class="common-content">
+                <img src="hero\image-4.2.jpg" alt="">
+                <p>Footwear</p>
+              </div>
+              <div class="common-content">
+                <img src="hero\image-4.3.jpg" alt="">
+                <p>Watches</p>
+              </div>
+              <div class="common-content">
+                <img src="hero\image-4.4.jpg" alt="">
+                <p>Bags & luggage</p>
+              </div>
+            </div>
+            <span><a href="#">See all offers</a></span>
+          </div>
+
+        </div>
+        <div class="col5 cols">
+          <h2>Revamp your home in style</h2>
+          <div class="content2 contents ">
+            <div class="common">
+              <div class="common-content">
+                <img src="hero\image-5.1.jpg" alt="">
+                <p>Bedsheets, curtains & more</p>
+              </div>
+              <div class="common-content">
+                <img src="hero\image-5.2.jpg" alt="">
+                <p>Home decoration</p>
+              </div>
+              <div class="common-content">
+                <img src="hero\image-5.3.jpg" alt="">
+                <p>Home Storage</p>
+              </div>
+              <div class="common-content">
+                <img src="hero\image-5.4.jpg" alt="">
+                <p>Lighting solutions</p>
+              </div>
+            </div>
+            <span><a href="#">See all offers</a></span>
+          </div>
+        </div>
+        <div class="col6 cols">
+          <h2>Appliances for your home | Up to 55% off</h2>
+          <div class="content2 contents ">
+            <div class="common">
+              <div class="common-content">
+                <img src="hero\image-6.1.jpg" alt="">
+                <p>Air conditioners</p>
+              </div>
+              <div class="common-content">
+                <img src="hero\image-6.2.jpg" alt="">
+                <p>Refrigerators</p>
+              </div>
+              <div class="common-content">
+                <img src="hero\image-6.3.jpg" alt="">
+                <p>Microwaves</p>
+              </div>
+              <div class="common-content">
+                <img src="hero\image-6.4.jpg" alt="">
+                <p>Washing machines</p>
+              </div>
+            </div>
+            <span><a href="#">See all offers</a></span>
+          </div>
+        </div>
+        <div class="col7 cols">
+          <h2>Up to 60% off | Styles for women</h2>
+          <div class="content2 contents ">
+            <div class="common">
+              <div class="common-content">
+                <img src="hero\image-7.1.jpg" alt="">
+                <p>Women's Clothing</p>
+              </div>
+              <div class="common-content">
+                <img src="hero\image-7.2.jpg" alt="">
+                <p>Footwear+Handbags</p>
+              </div>
+              <div class="common-content">
+                <img src="hero\image-7.3.jpg" alt="">
+                <p>Watches</p>
+              </div>
+              <div class="common-content">
+                <img src="hero\image-7.4.jpg" alt="">
+                <p>Fashion jewellery</p>
+              </div>
+            </div>
+            <span><a href="#">See all offers</a></span>
+          </div>
+        </div>
+        <div class="col8 cols">
+          <h2>Automotive essentials | Up to 60% off</h2>
+          <div class="content2 contents ">
+            <div class="common">
+              <div class="common-content">
+                <img src="hero\image-8.1.jpg" alt="">
+                <p>Cleaning accessories</p>
+              </div>
+              <div class="common-content">
+                <img src="hero\image-8.2.jpg" alt="">
+                <p>Tyre & rim care</p>
+              </div>
+              <div class="common-content">
+                <img src="hero\image-8.3.jpg" alt="">
+                <p>Helmets</p>
+              </div>
+              <div class="common-content">
+                <img src="hero\image-8.4.jpg" alt="">
+                <p>Vacuum cleaner</p>
+              </div>
+            </div>
+            <span><a href="#">See all offers</a></span>
+          </div>
+        </div>
+        </div>
+      <!-- today-deals -->
+      <div class="top-deals">
+        <div class="top-deals-head section-head">
+          <h2>Today’s Deals</h2>
+          <a href="#">See all deals</a>
+        </div>
+        <div class="coll">
+        <div class="today-deals-slide">
+          <div class="img-bg">
+            <img src="today-deals\image-1.jpg" alt="">
+          </div>
+          <div class="deal">
+            <span class="lft">Up to 55% off</span>
+            <span class="rgt">Deal of the day</span>
+          </div>
+          <p>Redmi Sonicbass 2- Launch Offer at 1...</p>
+        </div>
+        <div class="today-deals-slide">
+          <div class="img-bg">
+            <img src="today-deals\image-2.jpg" alt="">
+          </div>
+          <div class="deal">
+            <span class="lft">Up to 20% off</span>
+            <span class="rgt">Deal of the day</span>
+          </div>
+          <p>All New vivo Y27 6Gb RAM 128GB RO...</p>
+        </div>
+        <div class="today-deals-slide">
+          <div class="img-bg">
+            <img src="today-deals\image-3.jpg" alt="">
+          </div>
+          <div class="deal">
+            <span class="lft">Up to 49% off</span>
+            <span class="rgt">Deal of the day</span>
+          </div>
+          <p>Starting 299 - ASIAN Footwear Collect...</p>
+        </div>
+        <div class="today-deals-slide">
+          <div class="img-bg">
+            <img src="today-deals\image-4.jpeg" alt="">
+          </div>
+          <div class="deal">
+            <span class="lft">Up to 25% off</span>
+            <span class="rgt">Deal of the day</span>
+          </div>
+          <p>Best offers on FixDerma</p>
+        </div>
+        <div class="today-deals-slide">
+          <div class="img-bg">
+            <img src="today-deals\image-5.jpg" alt="">
+          </div>
+          <div class="deal">
+            <span class="lft">Up to 20% off</span>
+            <span class="rgt">Deal of the day</span>
+          </div>
+          <p>Nokia C12 Most Affordable sma...</p>
+        </div>
+        <div class="today-deals-slide">
+          <div class="img-bg">
+            <img src="today-deals\image-6.jpg" alt="">
+          </div>
+          <div class="deal">
+            <span class="lft">Up to 85% off</span>
+            <span class="rgt">Deal of the day</span>
+          </div>
+          <p>Wallpapers from wolpin</p>
+        </div>
+        <div class="today-deals-slide">
+          <div class="img-bg">
+            <img src="today-deals\image-7.jpg" alt="">
+          </div>
+          <div class="deal">
+            <span class="lft">Up to 10% off</span>
+            <span class="rgt">Deal of the day</span>
+          </div>
+          <p>Best deals on Pens & Writing instrume...</p>
+        </div>
+        <div class="today-deals-slide">
+          <div class="img-bg">
+            <img src="today-deals\image-8.jpg" alt="">
+          </div>
+          <div class="deal">
+            <span class="lft">Up to 40% off</span>
+            <span class="rgt">Deal of the day</span>
+          </div>
+          <p>WaterSceince best deals Bath Faucets...</p>
+        </div>
+        <div class="today-deals-slide">
+          <div class="img-bg">
+            <img src="today-deals\image-9.jpg" alt="">
+          </div>
+          <div class="deal">
+            <span class="lft">Up to 58% off</span>
+            <span class="rgt">Deal of the day</span>
+          </div>
+          <p>Telescopic & Step Ladders from Prime</p>
+        </div>
+        <div class="today-deals-slide">
+          <div class="img-bg">
+            <img src="today-deals\image-10.jpg" alt="">
+          </div>
+          <div class="deal">
+            <span class="lft">Up to 55% off</span>
+            <span class="rgt">Deal of the day</span>
+          </div>
+          <p>VIP vests at best price ever</p>
+        </div>
+        <div class="today-deals-slide">
+          <div class="img-bg">
+            <img src="today-deals\image-11.jpg" alt="">
+          </div>
+          <div class="deal">
+            <span class="lft">Up to 75% off</span>
+            <span class="rgt">Deal of the day</span>
+          </div>
+          <p>GRIVAN,LivesUp Bath & Kitchen acces...</p>
+        </div>
+        <div class="today-deals-slide">
+          <div class="img-bg">
+            <img src="today-deals\image-12.jpg" alt="">
+          </div>
+          <div class="deal">
+            <span class="lft">Up to 55% off</span>
+            <span class="rgt">Deal of the day</span>
+          </div>
+          <p>Best Offers onRed Chief footwear</p>
+        </div>
+        <div class="today-deals-slide">
+          <div class="img-bg">
+            <img src="today-deals\image-13.jpg" alt="">
+          </div>
+          <div class="deal">
+            <span class="lft">Up to 40% off</span>
+            <span class="rgt">Deal of the day</span>
+          </div>
+          <p>Best Offers on Paragon footwear</p>
+        </div>
+       </div>
+       
+      </div>
+      <!-- upto-50% -->
+      <div class="upto50">
+        <div class="upto-50-head section-head">
+          <h2>Up to 50% off |Sneak peek at the latest arrivals from Local shops</h2>
+          <a href="#">See all deals</a>
+        </div>
+        <div class="coll upto50-coll">
+        <div class="upto-50-slide">
+            <img src="upto-50/image-1.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-2.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-3.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-4.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-5.jpg" alt="">
+        </div>     
+        <div class="upto-50-slide">
+          <img src="upto-50/image-6.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-7.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-8.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-9.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-10.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-11.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-12.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-13.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-14.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-15.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-16.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-17.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-18.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-19.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-20.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-21.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-22.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-23.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-24.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-25.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-26.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-27.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-28.jpg" alt="">
+        </div>
+        <div class="upto-50-slide">
+          <img src="upto-50/image-29.jpg" alt="">
+        </div>
+      </div>
+     </div>
+     <!-- flat-60% -->
+     <div class="flat60">
+      <div class="flat-60-head section-head">
+        <h2>Flat 60% off | Tredning fashion from stores near you</h2>
+        <a href="#">See all Offers</a>
+      </div>
+      <div class="coll flat60-coll">
+        <div class="flat-60-slide">
+            <img src="flat-60\image-1.jpg" alt="">
+          </div> 
+          <div class="flat-60-slide">
+            <img src="flat-60\image-2.jpg" alt="">
+          </div>  
+          <div class="flat-60-slide">
+            <img src="flat-60\image-3.jpg" alt="">
+          </div>  
+          <div class="flat-60-slide">
+            <img src="flat-60\image-4.jpg" alt="">
+          </div>  
+          <div class="flat-60-slide">
+            <img src="flat-60\image-5.jpg" alt="">
+          </div>   
+          <div class="flat-60-slide">
+            <img src="flat-60\image-6.jpg" alt="">
+          </div>  
+          <div class="flat-60-slide">
+            <img src="flat-60\image-7.jpg" alt="">
+          </div>  
+          <div class="flat-60-slide">
+            <img src="flat-60\image-8.jpg" alt="">
+          </div> 
+          <div class="upto-60-slide">
+            <img src="flat-60\image-9.jpg" alt="">
+          </div> 
+          <div class="flat-60-slide">
+            <img src="flat-60\image-10.jpg" alt="">
+          </div>  
+          <div class="flat-60-slide">
+            <img src="flat-60\image-11.jpg" alt="">
+          </div>  
+          <div class="flat-60-slide">
+            <img src="flat-60\image-12.jpg" alt="">
+          </div>  
+          <div class="flat-60-slide">
+            <img src="flat-60\image-13.jpg" alt="">
+          </div>   
+          <div class="flat-60-slide">
+            <img src="flat-60\image-14.jpg" alt="">
+          </div>   
+       
+     </div>
+     </div>
+     <!-- min-50% -->
+     <div class="min-50">
+      <div class="col1 cols">
+        <h2>Minimum 50% off | Top styles for her</h2>
+        <div class="content2 contents ">
+          <div class="common">
+            <div class="common-content">
+              <img class="ext" src="min-50\image-1.1.jpg" alt="">
+              <p>Allen Solly, Fort Collins & more</p>
+            </div>
+            <div class="common-content">
+              <img class="ext" src="min-50\image-1.2.jpg" alt="">
+              <p>Biba, Aurelia & more</p>
+            </div>
+            <div class="common-content">
+              <img class="ext"  src="min-50\image-1.3.jpg" alt="">
+              <p>Womanista, Mimosa & more</p>
+            </div>
+            <div class="common-content">
+              <img class="ext" src="min-50\image-1.4.jpg" alt="">
+              <p>Harpa, Only & more</p>
+            </div>
+          </div>
+          <span><a href="#">See all offers</a></span>
+        </div>
+      </div>
+      <div class="col12 cols">
+        <h2>Up to 60% off | Healthy cooking essentials</h2>
+        <div class="content2 contents ">
+          <div class="common">
+            <div class="common-content">
+              <img class="ext" src="min-50\image-2.1.jpg" alt="">
+              <p>Coppers bottles & utensils</p>
+            </div>
+            <div class="common-content">
+              <img class="ext" src="min-50\image-2.2.jpg" alt="">
+              <p>Try-ply cookware sets & more</p>
+            </div>
+            <div class="common-content">
+              <img class="ext"  src="min-50\image-2.3.jpg" alt="">
+              <p>Cast iron tawa, kadhi &  more</p>
+            </div>
+            <div class="common-content">
+              <img class="ext" src="min-50\image-2.4.jpg" alt="">
+              <p>Glass jars, casseroles & more</p>
+            </div>
+          </div>
+          <span><a href="#">See all offers</a></span>
+        </div>
+      </div>
+      <div class="col3 cols">
+        <h2>Cambo packs | Under 599</h2>
+        <div class="content2 contents">
+          <img src="min-50\image-3.jpg">
+          <span><a href="#">See all offers</a></span>
+        </div>
+      </div>
+      <div class="col4 cols">
+        <h2>Up to 60% off | Styles for men</h2>
+        <div class="content2 contents ">
+          <div class="common">
+            <div class="common-content">
+              <img class="ext" src="min-50\image-4.1.jpeg" alt="">
+              <p>Sports shoes</p>
+            </div>
+            <div class="common-content">
+              <img class="ext" src="min-50\image-4.2.jpeg" alt="">
+              <p>Jewellery & accessories</p>
+            </div>
+            <div class="common-content">
+              <img class="ext"  src="min-50\image-4.3.jpg" alt="">
+              <p>Watches &smartwatches</p>
+            </div>
+            <div class="common-content">
+              <img class="ext" src="min-50\image-4.4.jpeg" alt="">
+              <p>Bags, wallets & luggage</p>
+            </div>
+          </div>
+          <span><a href="#">See all offers</a></span>
+        </div>
+    </div>
+     </div>
+    <!-- newly-lanches -->
+    <div class="newly-lanches">
+      <div class="newly-lanches-head section-head">
+        <h2>New launches from womed-led business</h2>
+        <a href="#">See all Offers</a>
+      </div>
+      <div class="coll newly-lanches-coll">
+        <div class="newly-lanches-slide">
+          <img src="new-lanches\image-1.jpg" alt="">
+        </div>
+        <div class="newly-lanches-slide">
+          <img src="new-lanches\image-2.jpg" alt="">
+        </div>
+        <div class="newly-lanches-slide">
+          <img src="new-lanches\image-3.jpg" alt="">
+        </div>
+        <div class="newly-lanches-slide">
+          <img src="new-lanches\image-4.jpg" alt="">
+        </div>
+        <div class="newly-lanches-slide">
+          <img src="new-lanches\image-5.jpg" alt="">
+        </div>
+        <div class="newly-lanches-slide">
+          <img src="new-lanches\image-6.jpg" alt="">
+        </div>
+        <div class="newly-lanches-slide">
+          <img src="new-lanches\image-7.jpg" alt="">
+        </div>
+        <div class="newly-lanches-slide">
+          <img src="new-lanches\image-8.jpg" alt="">
+        </div>
+        <div class="newly-lanches-slide">
+          <img src="new-lanches\image-9.jpg" alt="">
+        </div>
+        <div class="newly-lanches-slide">
+          <img src="new-lanches\image-10.jpg" alt="">
+        </div>
+        <div class="newly-lanches-slide">
+          <img src="new-lanches\image-11.jpg" alt="">
+        </div>
+        <div class="newly-lanches-slide">
+          <img src="new-lanches\image-12.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- upto-60 -->
+    <div class="upto-60">
+      <div class="upto-60-head section-head">
+        <h2>Upto 60% off | Makey your home significantly better</h2>
+        <a href="#">See all Offers</a>
+      </div>
+      <div class="coll upto60-coll">
+        <div class="upto-60-slide">
+            <img src="upto-60\image-1.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-1.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-2.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-3.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-4.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-5.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-6.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-7.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-8.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-9.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-10.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-11.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-12.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-13.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-14.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-15.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-16.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-17.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-18.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-19.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-20.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-21.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-22.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-23.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-24.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60\image-25.jpg" alt="">
+        </div> 
+      </div>
+    </div>
+    
+     <div class="home-furn">
+      <img src="image-1.jpg" alt="">
+      <p>Sponsored</p>
+     </div>
+     <!-- min-50%-2 -->
+     <div class="min-50">
+      <div class="col1 cols">
+        <h2>Minimum 50% off | Top styles for her</h2>
+        <div class="content2 contents ">
+          <div class="common">
+            <div class="common-content">
+              <img class="ext" src="upt50-2\image1.1.jpg" alt="">
+              <p>Allen Solly, Fort Collins & more</p>
+            </div>
+            <div class="common-content">
+              <img class="ext" src="upt50-2\image1.2.jpg"  alt="">
+              <p>Biba, Aurelia & more</p>
+            </div>
+            <div class="common-content">
+              <img class="ext"  src="upt50-2\image1.3.jpg" alt="">
+              <p>Womanista, Mimosa & more</p>
+            </div>
+            <div class="common-content">
+              <img class="ext" src="upt50-2\image1.4.jpg"  alt="">
+              <p>Harpa, Only & more</p>
+            </div>
+          </div>
+          <span><a href="#">See all offers</a></span>
+        </div>
+      </div>
+      <div class="col12 cols">
+        <h2>Up to 60% off | Outdoor & sports toys</h2>
+        <div class="content2 contents ">
+          <div class="common">
+            <div class="common-content">
+              <img class="ext" src="upt50-2\image2.1.jpg" alt="">
+              <p>Inflatable pools | Starting ₹390</p>
+            </div>
+            <div class="common-content">
+              <img class="ext" src="upt50-2\image2.2.jpg"  alt="">
+              <p>Blasters & toys guns | Starting ₹170</p>
+            </div>
+            <div class="common-content">
+              <img class="ext"  src="upt50-2\image2.3.jpg" alt="">
+              <p>Ride on scooters | Starting ₹960</p>
+            </div>
+            <div class="common-content">
+              <img class="ext" src="upt50-2\image2.4.jpg"  alt="">
+              <p>Slides | Starting ₹1,795 </p>
+            </div>
+          </div>
+          <span><a href="#">Explore more toys</a></span>
+        </div>
+      </div>
+      <div class="col3 cols">
+        <h2>Hip Hop India | Watch Now Only on miniTV</h2>
+        <div class="content2 contents">
+          <img src="upt50-2\image3.jpg" >
+          <span><a href="#">Watch for FREE | miniTV</a></span>
+        </div>
+      </div>
+      <div class="col4 cols">
+        <h2>Electronic devices for home office</h2>
+        <div class="content2 contents ">
+          <div class="common">
+            <div class="common-content">
+              <img class="ext" src="upt50-2\image4.1.jpg" alt="">
+              <p>Smartwatches & fitness trackers</p>
+            </div>
+            <div class="common-content">
+              <img class="ext" src="upt50-2\image4.2.jpg"  alt="">
+              <p>Tablets</p>
+            </div>
+            <div class="common-content">
+              <img class="ext"  src="upt50-2\image4.3.jpg" alt="">
+              <p>Laptops</p>
+            </div>
+            <div class="common-content">
+              <img class="ext" src="upt50-2\image4.4.jpg" alt="">
+              <p>Monitors</p>
+            </div>
+          </div>
+          <span><a href="#">See more</a></span>
+        </div>
+    </div>
+     
+
+
+
+
+
+    </div>
+    <!-- kitchen-->
+    <div class="kitchen upto-60">
+      <div class="upto-60-head section-head">
+        <h2>Curated kitchen products  from women-led business</h2>
+        <a href="#">See all Offers</a>
+      </div>
+      <div class="coll upto60-coll">
+        <div class="upto-60-slide">
+            <img src="kitchen\image-1.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+            <img src="kitchen\image-2.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+            <img src="kitchen\image-3.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="kitchen\image-4.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="kitchen\image-5.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="kitchen\image-6.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="kitchen\image-7.jpg" alt="">
+      </div> 
+      <div class="upto-60-slide">
+          <img src="kitchen\image-8.jpg" alt="">
+      </div> 
+      <div class="upto-60-slide">
+          <img src="kitchen\image-9.jpg" alt="">
+      </div> 
+      <div class="upto-60-slide">
+        <img src="kitchen\image-10.jpg" alt="">
+      </div> 
+      <div class="upto-60-slide">
+        <img src="kitchen\image-11.jpg" alt="">
+      </div> 
+      <div class="upto-60-slide">
+        <img src="kitchen\image-12.jpg" alt="">
+      </div> 
+      <div class="upto-60-slide">
+        <img src="kitchen\image-13.jpg" alt="">
+      </div> 
+      <div class="upto-60-slide">
+        <img src="kitchen\image-14.jpg" alt="">
+      </div> 
+      <div class="upto-60-slide">
+        <img src="kitchen\image-15.jpg" alt="">
+      </div>
+    </div>
+    </div>
+    <!-- best-sellers -->
+    <div class=" best-sellers min-50">
+      <div class="col1 cols">
+        <h2>Bestselllersin Womens's Indian Clothing</h2>
+        <div class="content2 contents ">
+          <div class="common best-comm">
+            <div class="common-content">
+              <img class="ext" src="best-sell\image-1.1.jpg" alt="">
+            </div>
+            <div class="common-content">
+              <img class="ext" src="best-sell\image-1.2.jpg" alt="">
+            </div>
+            <div class="common-content">
+              <img class="ext"  src="best-sell\image-1.3.jpg"alt="">
+            </div>
+            <div class="common-content">
+              <img class="ext" src="best-sell\image-1.4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col12 cols">
+        <h2>Birthday Store</h2>
+        <div class="content2 contents ">
+          <div class="common">
+            <div class="common-content">
+              <img class="ext" src="best-sell\image-2.1.jpg" alt="">
+              <p>Gift for men</p>
+            </div>
+            <div class="common-content">
+              <img class="ext" src="best-sell\image-2.2.jpg" alt="">
+              <p>Gift for women</p>
+            </div>
+            <div class="common-content">
+              <img class="ext"  src="best-sell\image-2.3.jpg" alt="">
+              <p>Gift for boys</p>
+            </div>
+            <div class="common-content">
+              <img class="ext" src="best-sell\image-2.4.jpg"  alt="">
+              <p>Gift for girls</p>
+            </div>
+          </div>
+          <span><a href="#">Explore more toys</a></span>
+        </div>
+      </div>
+      <div class="col1 cols">
+        <h2>Under ₹499 | Pocket-friendly fashion</h2>
+        <div class="content2 contents ">
+          <div class="common">
+            <div class="common-content">
+              <img class="ext" src="best-sell\image-3.1.jpg" alt="">
+              <p>Clothing</p>
+            </div>
+            <div class="common-content">
+              <img class="ext" src="best-sell\image-3.2.jpg" alt="">
+              <p>Backpacks</p>
+            </div>
+            <div class="common-content">
+              <img class="ext"  src="best-sell\image-3.3.jpg" alt="">
+              <p>Footwears</p>
+            </div>
+            <div class="common-content">
+              <img class="ext" src="best-sell\image-3.4.jpg"  alt="">
+              <p>view all</p>
+            </div>
+          </div>
+          <span><a href="#">See all offers</a></span>
+        </div>
+      </div>
+    
+      <div class="col4 cols">
+        <h2>Essentials for Expecting Mothers</h2>
+        <div class="content2 contents ">
+          <div class="common">
+            <div class="common-content">
+              <img class="ext" src="best-sell\image-4.1.jpg" alt="">
+              <p>Pregnancy supplements</p>
+            </div>
+            <div class="common-content">
+              <img class="ext" src="best-sell\image-4.2.jpg" alt="">
+              <p>Maternity Sleep & Longwear</p>
+            </div>
+            <div class="common-content">
+              <img class="ext"  src="best-sell\image-4.3.jpg" alt="">
+              <p>Maternity pillows  </p>
+            </div>
+            <div class="common-content">
+              <img class="ext" src="best-sell\image-4.4.jpg"  alt="">
+              <p>Maternity Skin care</p>
+            </div>
+          </div>
+          <span><a href="#">See more</a></span>
+        </div>
+    </div>
+    </div>
+    <!-- upto 60%-2 -->
+    <div class="upto-60-2 upto-60">
+      <div class="upto-60-head section-head">
+        <h2>Up to 60% | Affordable kitchenware  for your home</h2>
+        <a href="#">See all Offers</a>
+      </div>
+      <div class="coll upto60-coll">
+        <div class="upto-60-slide">
+            <img src="upto-60-1\image-1.jpg" alt="">
+        </div> 
+        <div class="upto-60-slide">
+          <img src="upto-60-1\image-2.jpg" alt="">
+        </div>         
+        <div class="upto-60-slide">
+          <img src="upto-60-1\image-3.jpg" alt="">
+        </div>
+        <div class="upto-60-slide">
+          <img src="upto-60-1\image-4.jpg" alt="">
+        </div>
+        <div class="upto-60-slide">
+          <img src="upto-60-1\image-5.jpg" alt="">
+        </div>       
+        <div class="upto-60-slide">
+          <img src="upto-60-1\image-6.jpg" alt="">
+      </div> 
+      <div class="upto-60-slide">
+        <img src="upto-60-1\image-7.jpg" alt="">
+      </div>         
+      <div class="upto-60-slide">
+        <img src="upto-60-1\image-8.jpg" alt="">
+      </div>
+      <div class="upto-60-slide">
+        <img src="upto-60-1\image-9.jpg" alt="">
+      </div>
+      <div class="upto-60-slide">
+        <img src="upto-60-1\image-10.jpg" alt="">
+      </div>  
+      <div class="upto-60-slide">
+        <img src="upto-60-1\image-11.jpg" alt="">
+    </div> 
+    <div class="upto-60-slide">
+      <img src="upto-60-1\image-12.jpg" alt="">
+    </div>         
+    <div class="upto-60-slide">
+      <img src="upto-60-1\image-13.jpg" alt="">
+    </div>
+    <div class="upto-60-slide">
+      <img src="upto-60-1\image-14.jpg" alt="">
+    </div>
+    <div class="upto-60-slide">
+      <img src="upto-60-1\image-15.jpg" alt="">
+    </div>      
+      </div>
+    </div>
+    </div>
+    </main>
+    <footer>
+        <div class="back-top">
+            <a class="home" href="#">Back to back-top</a>
+        </div>
+        <div class="foot-main">
+            <div class="foot-main-top">
+                <div class="column">
+                    <h2>Get to Know Us</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press Releases</a></li>
+                        <li><a href="#">Amazon Science</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h2>Connect with Us</h2>
+                    <ul> 
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Twitter</a></li>
+                      <li><a href="#">Instagram</a></li>
+                    </ul>
+                   
+                </div>
+                <div class="column">
+                    <h2>Make Money with Us</h2>
+                    <ul>
+                      <li><a href="#">Sell on Amazon</a></li>
+                      <li><a href="#">Sell under Amazon Accelerator</a></li>
+                      <li><a href="#">Protect and Build Your Brand</a></li>
+                      <li><a href="#">Amazon Global Selling</a></li>
+                      <li><a href="#">Become an Affiliate</a></li>
+                      <li><a href="#">Fulfilment by Amazon</a></li>
+                      <li><a href="#">Advertise Your Products</a></li>    
+                      <li><a href="#">Amazon Pay on Merchants</a></li>
+                    </ul>
+                    
+                </div>
+                <div class="column">
+                    <h2>Let Us Help You</h2>
+                    <ul>
+                      <li><a href="#">COVID-19 and Amazon</a></li>
+                      <li><a href="#">Your Account</a></li>
+                      <li><a href="#">Returns Centre</a></li>
+                      <li><a href="#">100% Purchase Protection</a></li>
+                      <li><a href="#">Amazon App Download</a></li>
+                      <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-main-bottom">
+              <div class="foot-main-bottom-sec1">
+                <img src="header\amazon-logo1.png" alt="Amazon-logo">
+               <a href="#"><i class="fa-solid fa-globe"></i>English</a>
+              </div>
+              <div class="country">
+                <ul>
+                  <li><a href="#">Australia</a></li>
+                  <li><a href="#">Brazil</a></li>
+                  <li><a href="#">Canada</a></li>
+                  <li><a href="#">China</a></li>
+                  <li><a href="#">France</a></li>
+                  <li><a href="#">Germany</a></li>
+                  <li><a href="#">Italy</a></li>
+                  <li><a href="#">Japan</a></li>
+                  <li><a href="#">Mexico</a></li>
+                  <li><a href="#">Netherlands</a></li>
+                  <li><a href="#">Poland</a></li>
+                  <li><a href="#">Singapore</a></li>
+                  <li><a href="#">Spain</a></li>
+                  <li><a href="#">Turkey</a></li>
+                  <li><a href="#">United Arab Emirates</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">United Kingdom</a></li>
+                  <li><a href="#">United States</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="copy">
+          <div class="about">
+            <div class="col">
+              <h3>AbeBooks</h3>
+              <p>Books, art</p>
+              <p>& collectibles</p>
+            </div>
+           <div class="col">
+              <h3>Amazon Web Services</h3>
+              <p>Scalable Cloud</p>
+              <p>Computing Services</p>
+            </div><div class="col">
+              <h3> Audible</h3>
+              <p>Download</p>
+              <p>Audio Books</p>
+            </div>
+            <div class="col">
+              <h3>DPReview</h3>
+              <p>Digital</p>
+              <p>Photography	</p>
+            </div>
+            <div class="col">
+              <h3>IMDb</h3>
+              <p> Movies, TV</p>
+              <p>& Celebrities</p>
+            </div><div class="col">
+              <h3>Shopbop</h3>
+              <p>Designer</p>
+              <p>Fashion Brands</p>
+            </div><div class="col">
+              <h3>Amazon Business</h3>
+              <p>Everything For</p>
+              <p>Your Business</p>
+            </div><div class="col">
+              <h3>Prime Now</h3>
+              <p>2-Hour Delivery</p>
+              <p>on Everyday Items</p>
+            </div><div class="col">
+              <h3>Amazon Prime Music</h3>
+              <p>100 million songs, ad-free</p>
+              <p>Over 15 million podcast episodes</p>
+            </div>
+            <div class="col"></div>
+          </div>
+          <div class="copyright">
+            <ul>
+              <li><a href="#">Conditions of Use & Sale</a></li>
+              <li><a href="#">Privacy Notice</a></li>
+              <li><a href="#">Interest-Based Ads</a></li>
+            </ul>
+            <p>© 1996-2023, Amazon.com, Inc. or its affiliates</p>
+          </div>
+        </div>
+    </footer>
+   
+    <script type="text/javascript" src="script.js">
+
+    </script>
+  </body>
+</html>
